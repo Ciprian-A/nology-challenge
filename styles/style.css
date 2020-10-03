@@ -105,7 +105,7 @@ h3 {
 /* ABOUT SECTION */
 
 #about {
-    /* background-image: url('/images/path.jpg'); */
+    background-image: url('/images/path.jpg');
     object-fit: cover;
     background-repeat: no-repeat;
     width: 100%;
