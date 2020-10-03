@@ -1,0 +1,320 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+    box-sizing: border-box;
+}
+/* NAVBAR + LOGO */
+
+header {
+    height: 740px;
+    background-image: url('/images/night-sky.jpg'); 
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+    margin:auto;
+}
+#my-svg {
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    display: block;
+    margin: auto;
+}
+
+.navbar-nav{
+    margin-left: 50%;
+    font-weight: 500;
+    font-size: larger; 
+    top: 0;
+}
+div .navbar-nav .nav-link {
+    top: 10px;
+}
+.nav-link {
+    margin-left: 50px;
+    float: left;
+    font-size: x-large;
+    transition: transform .2s;
+    color: black;
+    border-radius: 10px;
+    padding: 10px 5px; 
+   
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+    text-decoration-line: underline;
+    text-decoration-color: brown;
+}
+.navbar-toggler-icon {
+    height: 30px;
+    position: relative;
+}
+.top-links {
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 40px;
+}
+p.description-top {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(229, 228, 226); 
+}
+.hi, .ciprian  {
+    font-size: 60px; 
+}
+
+.media-icon-top {
+    margin: 20px;
+    color:rgb(45, 76, 134);
+}
+.media-icon-top:hover{
+    color:rgb(123, 183, 233); 
+}
+/* Main */
+main {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+hr {
+    width: 60%;
+    margin: 100px auto;
+    box-shadow: 3px 3px 5px brown;
+}
+h3 {
+    text-align: left;
+    margin: 10px auto 0px 100px;
+    text-decoration: underline;
+    text-decoration-color: brown;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+
+/* ABOUT SECTION */
+
+#about {
+    /* background-image: url('/images/path.jpg'); */
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#me-pic {
+    width: 150px;
+    height: 150px;
+    border: 6px solid #a76713;
+    border-radius: 50%;
+    margin-left: 90px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom:40px; 
+    float: left;  
+    transition: transform .2s;  
+    white-space: nowrap;
+    
+}
+#me-pic:hover {
+    cursor: pointer;
+    box-shadow: 3px 10px 10px #a76713;
+    transform: scale(1.1);
+}
+
+article#quote {
+    text-align: left;
+    margin: 40px auto;
+    width: 50%;
+    padding-bottom: 70px;
+    visibility: hidden;
+    line-height: 2rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+/* PROJECTS-SECTION */
+#projects-section {
+    background-image: url('/images/light_bulb_orange.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#projects {
+    color: snow;
+}
+.project-card {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+
+.card-container {
+    display: inline-flex;
+}
+.card {
+    display: inline-flex;
+    margin: 30px;
+    justify-content: space-around;
+    box-shadow: 5px 5px 15px black;
+    transition: transform .2s;
+    width: 65%;
+    text-align: left;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+.card-link {
+    padding: 2px 5px;
+    margin: 0px;
+}
+.card-link:hover {
+    background-color: brown;
+    border-radius: 6px;
+    color: white;
+}
+/*  SKILLS-SECTION*/
+
+
+#skills{
+    padding-top: 0px;
+} 
+#skills-bar {
+    width: 65vw;
+    margin: auto ;
+}
+.skills-description {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+.icon-skills {
+    margin-right: 15px;
+    text-align: center;
+}
+.progress {
+    width:100%;
+    margin: auto;
+}
+
+.progress-bar.bg-dark {
+    text-align: right;
+
+}
+.space-bars {
+    text-align: left;
+    width:100%;
+    margin: auto;
+    font-weight: 700;
+}
+
+/* CONTACT-SECTION */
+
+
+#contact-section {
+    background-image: url('/images/quill-writing.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#contact {
+    color: white;
+}
+.contact-text {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+}
+/* CONTACT-FORM */
+.mb-4 {
+    width: 60%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+.text-center {
+    color:white;
+}
+.md-form {
+    text-align: left;
+    color: white;
+}
+.mb-4 {
+    margin-bottom: 30px;
+}
+.btn-send {
+    margin-top: 20px;
+    background-color: rgb(112, 15, 15);
+}
+/* FOOTER */
+footer {
+ 
+}
+#copyright {
+    margin: auto;
+    text-align: center;
+}
+
+
+/*   MEDIA QUERY  */
+
+@media screen and (max-width: 987px){
+     div .navbar-nav {
+         text-align: right;
+     }
+     .nav-link {
+        font-size: 20px;
+     }
+    .hi, .ciprian {
+        font-size: 26px;
+    }
+    .web-dev {
+        font-size: 19px;
+    }
+   
+    .top-links {
+        padding: top 10px;
+    }
+    
+    #me-pic {
+      white-space: nowrap;
+      float: none;
+      margin: auto;
+      text-align: center;
+    }
+    article#quote {
+        margin: 30px auto;
+        font-size: larger;
+        font-weight: 500;
+        width: 90%;
+    }
+    #about-me, #projects, #skills, #contact {
+      margin: auto;
+      text-align: center;
+    }
+    .project-card {
+        width: 90%;
+    }
+    #skills-bar {
+        width: 90%;
+    }
+    .space-bars, .progress {
+        width: 100%;
+    }
+    .mb-4 {
+        width: 90%;
+    }
+    
+  }
+
