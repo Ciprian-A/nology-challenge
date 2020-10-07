@@ -1,4 +1,6 @@
 // FORM VALIDDATION
+// alert('is working');
+
 const status = document.querySelector('.status');
 function validateForm() {
     const name =  document.getElementById('name').value;
@@ -49,9 +51,9 @@ function clearInnerHTML(){
 
 // TOP MEDIA ICON ANIMATION
 const mediaTl = gsap.timeline();
-mediaTl.from("#git", {x: 400, duration: 1, opacity: 0, rotation: 720, delay: 1})
-  .from("#linkedin", {x: 400, duration: 1, opacity: 0, rotation: 720}, "-=0.5") 
-  .from("#facebook", {x: 400, duration: 1, opacity: 0, rotation: 720}, "-=0.5");
+mediaTl.from(".git", {x: 100, duration: 1, opacity: 0, rotation: 720, delay: 1})
+  .from(".linkedin", {x: 100, duration: 1, opacity: 0, rotation: 720}, "-=0.5") 
+  .from(".facebook", {x: 100, duration: 1, opacity: 0, rotation: 720}, "-=0.5");
 
 
 // GREETING ANIMATION FADE-IN-OUT FOR '.HI'
@@ -124,14 +126,14 @@ anime.timeline({loop: true})
 
 // ABOUT-SECTION ANIMATION 
 
-const quoteTextWrapper = document.querySelector('#quote');
+const quoteTextWrapper = document.querySelector('.quote');
 quoteTextWrapper.innerHTML = quoteTextWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
     
    
 
-const quote = document.querySelector('#quote');
+const quote = document.querySelector('.quote');
 const mePic = document.querySelector('#me-pic');
-const aboutMe = document.querySelector('#about-me');
+const aboutMe = document.querySelector('.about-me');
 // Add a constant movement of #me-pic 
 anime({
   targets: '#me-pic',
@@ -148,7 +150,7 @@ mePic.addEventListener('click', ()=> {
     aboutMe.innerHTML = 'My short story';
     anime.timeline({loop: false})
     .add({
-      targets: '#quote .letter',
+      targets: '.quote .letter',
       translateY: [100,0],
       translateZ: 0,
       opacity: [0,1],
@@ -167,7 +169,7 @@ const projects = document.querySelector('#projects-section');
 gsap.registerPlugin(ScrollTrigger);
 const projectScrollTl = gsap.timeline({
   scrollTrigger: {
-    trigger: "#about",
+    trigger: "#about-section",
     start: "bottom center",
     toggleActions: 'play restart play reset',
     endTrigger: "#projects-section",
@@ -176,12 +178,12 @@ const projectScrollTl = gsap.timeline({
     markers: false
   }
 });
-projectScrollTl.from("#card-tl", {x: -40, y: -40, duration: 1, opacity: 0, ease: "power1.out"})
-        .from("#card-tm", {y: -40, duration: 1, opacity: 0, ease: "power1.out"},'-= 0.5') 
-        .from("#card-tr", {x: 40, y: -40, duration:1, opacity: 0, ease: "power1.out"},'-= 0.5') 
-        .from("#card-bl", {x: -40, y: 40, duration: 1, opacity: 0, ease: "power1.out"},'-= 0.5') 
-        .from("#card-bm", {y: 40, duration: 1, opacity: 0, ease: "power1.out"},'-= 0.5') 
-        .from("#card-br", {x: 40, y: 40, duration: 1, opacity: 0, ease: "power1.out"},'-= 0.5'); 
+projectScrollTl.from(".card-tl", {x: -40, y: -40, duration: 1, opacity: 0, ease: "power1.out"})
+        .from(".card-tm", {y: -40, duration: 1, opacity: 0, ease: "power1.out"},'-= 0.5') 
+        .from(".card-tr", {x: 40, y: -40, duration:1, opacity: 0, ease: "power1.out"},'-= 0.5') 
+        .from(".card-bl", {x: -40, y: 40, duration: 1, opacity: 0, ease: "power1.out"},'-= 0.5') 
+        .from(".card-bm", {y: 40, duration: 1, opacity: 0, ease: "power1.out"},'-= 0.5') 
+        .from(".card-br", {x: 40, y: 40, duration: 1, opacity: 0, ease: "power1.out"},'-= 0.5'); 
 
 
 // SKILLS-SECTION ANIMATION : CREATE A CONSTANT 'WAVE' ANIMATION
