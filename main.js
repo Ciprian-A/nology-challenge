@@ -1,6 +1,4 @@
 // FORM VALIDDATION
-// alert('is working');
-
 const status = document.querySelector('.status');
 function validateForm() {
     const name =  document.getElementById('name').value;
