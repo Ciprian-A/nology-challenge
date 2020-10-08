@@ -229,6 +229,7 @@ h3 {
 .form-input {
     width: 100%;
     margin: auto;
+    padding: 0;
 }
 .form-control {
     margin: 15px auto;
@@ -237,12 +238,13 @@ h3 {
     margin: auto;
 }
 .btn-send {
-    background-color: sienna);
+    background-color: sienna;
     border: 1px solid rgb(226, 186, 168);
     width: 100%
 }
 .verify {
     margin: auto;
+}
 .status {
     margin-top: 15px;
 }
