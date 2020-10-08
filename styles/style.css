@@ -241,6 +241,8 @@ h3 {
     border: 1px solid rgb(226, 186, 168);
     width: 100%
 }
+.verify {
+    margin: auto;
 .status {
     margin-top: 15px;
 }
