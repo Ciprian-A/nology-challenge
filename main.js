@@ -161,34 +161,41 @@ mePic.addEventListener('click', ()=> {
 // PROJECT-SECTION ANIATION: CREATE A 'FADE-IN & SLIDE-IN ANIMATION
 
 const projectsTl = gsap.timeline();   
-const projects = document.querySelector('#projects-section');
-
 
 gsap.registerPlugin(ScrollTrigger);
-const projectScrollTl = gsap.timeline({
+const projectTopScrollTl = gsap.timeline({
   scrollTrigger: {
     trigger: "#about-section",
     start: "bottom center",
-    toggleActions: 'play restart play reset',
+    endTrigger: "#projects-section",
+    end: 'center center',
+    scrub: 0.5,
+    markers: false
+  }
+});
+
+projectTopScrollTl.from(".card-tl", {x: -40, y: -40, duration: 1, opacity: 0, ease: "power1.out"})
+        .from(".card-tm", {y: -40, duration: 1, opacity: 0, ease: "power1.out"},'-= 0.5') 
+        .from(".card-tr", {x: 40, y: -40, duration:1, opacity: 0, ease: "power1.out"},'-= 0.5'); 
+
+const projectBottomScrollTl = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#project-section",
+    start: "center center",
     endTrigger: "#projects-section",
     end: 'bottom center',
     scrub: 0.5,
     markers: false
   }
 });
-projectScrollTl.from(".card-tl", {x: -40, y: -40, duration: 1, opacity: 0, ease: "power1.out"})
-        .from(".card-tm", {y: -40, duration: 1, opacity: 0, ease: "power1.out"},'-= 0.5') 
-        .from(".card-tr", {x: 40, y: -40, duration:1, opacity: 0, ease: "power1.out"},'-= 0.5') 
-        .from(".card-bl", {x: -40, y: 40, duration: 1, opacity: 0, ease: "power1.out"},'-= 0.5') 
-        .from(".card-bm", {y: 40, duration: 1, opacity: 0, ease: "power1.out"},'-= 0.5') 
-        .from(".card-br", {x: 40, y: 40, duration: 1, opacity: 0, ease: "power1.out"},'-= 0.5'); 
 
-
+projectBottomScrollTl.from(".card-bl", {x: -20, y: 20, duration: 1, opacity: 0, ease: "power1.out"},'-= 0.5') 
+        .from(".card-bm", {y: 20, duration: 1, opacity: 0, ease: "power1.out"},'-= 0.5') 
+        .from(".card-br", {x: 20, y: 20, duration: 1, opacity: 0, ease: "power1.out"},'-= 0.5'); 
 // SKILLS-SECTION ANIMATION : CREATE A CONSTANT 'WAVE' ANIMATION
 
 anime({
   targets: '.space-bars, .progress',
-  // translateY: 20,
   translateX: 20,
   direction: 'alternate',
   opacity: 0.2,
@@ -207,7 +214,6 @@ const contactScrollTl = gsap.timeline({
   scrollTrigger: {
     trigger: "#skills-section",
     start: "bottom 80",
-    toggleActions: 'play restart none reset',
     endTrigger: "#contact-section",
     end: 'bottom bottom',
     scrub: 1,
