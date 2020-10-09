@@ -259,6 +259,15 @@ h3 {
 .bottom-contact-details {
     color:white;
 }
+.about-me:hover, .skills:hover {
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+.projects:hover, .contact:hover {
+    text-decoration: underline;
+    text-decoration-color: white;  
+}
+
 /* FOOTER */
 .copyright {
     margin: auto;
