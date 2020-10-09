@@ -94,6 +94,7 @@ h3 {
     background-size: cover;
     margin-top: 100px;
     margin-bottom: 100px;
+    box-shadow: 3px 3px 10px black;
 }
 
 #me-pic {
