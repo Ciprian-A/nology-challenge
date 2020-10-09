@@ -313,7 +313,7 @@ h3 {
 }
 @media screen and (max-width: 644px) {
     .about-me {
-        background-color: tan;
+        background-color: rgb(168, 113, 68);
     }
     .card-container {
         width: 100%;
