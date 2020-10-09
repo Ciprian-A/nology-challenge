@@ -80,18 +80,15 @@ hr {
 h3 {
     text-align: left;
     margin: 10px auto 0px 100px;
-    text-decoration: underline;
-    text-decoration-color: brown;
     padding-top: 50px;
     padding-bottom: 50px;
-    
 }
 
 /* ABOUT SECTION */
 
 #about-section {
     background-image: url('/images/Blank-Sheet.jpg');
-    object-fit: contain;
+    object-fit: cover;
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
@@ -129,11 +126,12 @@ h3 {
 /* PROJECTS-SECTION */
 #projects-section {
     background-image: url('/images/light_bulb_orange.jpg');
+    object-fit: cover;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .projects {
-    color: snow;
+    color: white;
 }
 .projects-container {
     width: 80%;
@@ -147,9 +145,7 @@ h3 {
     display: inline-flex;
 }
 .card {
-    display: inline-flex;
     margin: 30px;
-    justify-content: space-around;
     box-shadow: 5px 5px 15px black;
     transition: transform .2s;
     width: 65%;
@@ -174,7 +170,7 @@ h3 {
     padding-top: 0px;
 } 
 .skills-bar-container {
-    width: 65vw;
+    width: 65%;
     margin: auto ;
 }
 
@@ -203,6 +199,7 @@ h3 {
 
 #contact-section {
     background-image: url('/images/quill-writing.jpg');
+    object-fit: cover;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -210,7 +207,7 @@ h3 {
 .contact {
     color: white;
 }
-.contact-me {
+.create {
     text-align: center;
     font-weight: 500;
     font-size: 20px;
@@ -222,7 +219,7 @@ h3 {
 }
 /* CONTACT-FORM */
 .form-container {
-    width: 80%;
+    width: 70%;
     margin: auto;
     padding-bottom: 30px;
 }
@@ -238,9 +235,12 @@ h3 {
     margin: auto;
 }
 .btn-send {
+    width: 100%;
     background-color: sienna;
     border: 1px solid rgb(226, 186, 168);
-    width: 100%
+}
+.btn-send:hover {
+    border: 1px solid white;
 }
 .verify {
     max-width: 304px;
@@ -269,7 +269,7 @@ h3 {
 /*   MEDIA QUERY  */
 
 @media screen and (max-width: 987px){
-     div .navbar-nav {
+     .navbar-nav {
          text-align: right;
      }
      .nav-link {
@@ -285,34 +285,39 @@ h3 {
       white-space: nowrap;
       float: none;
       margin: auto;
-      text-align: center;
     }
     .quote {
         margin: 30px auto;
         width: 80%;
     }
-    .about-me,.projects, .skills, .contact {
+    .about-me, .projects, .skills, .contact {
       margin: auto;
       text-align: center;
     }
     .project-card {
         width: 90%;
-        visibility: visible;
     }
     .skills-bar {
         width: 80%;
-    }
-    .form-container {
-        width: 90%;
-    }
-    
-    
+    }  
   }
-  @media screen and (max-width: 632px){
-
+@media screen and (max-width: 886px){
+   .card-container {
+        width: 40%;
+    } 
+}
+@media screen and (max-width: 700px){
     .bottom-details-container {
         display: block;
-        
     }
-  }
-
+}
+@media screen and (max-width: 644px) {
+    .about-me {
+        background-color: tan;
+    }
+    .card-container {
+        width: 100%;
+        margin: auto;
+        display: flex;
+    } 
+}
