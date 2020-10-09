@@ -180,7 +180,7 @@ projectTopScrollTl.from(".card-tl", {x: -40, y: -40, duration: 1, opacity: 0, ea
 
 const projectBottomScrollTl = gsap.timeline({
   scrollTrigger: {
-    trigger: "#project-section",
+    trigger: "#projects-section",
     start: "top center",
     endTrigger: "#projects-section",
     end: 'bottom center',
